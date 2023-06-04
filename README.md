@@ -4,12 +4,16 @@
 
 <em><h5 align="center">(formerly Electron Launcher)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/dscalzi/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/dscalzi/ModdedLauncher/releases) <img src="https://forthebadge.com/images/badges/winter-is-coming.svg"  height="28px" alt="winter-is-coming"></p>
+[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/GabouleDev/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/GabouleDev/ModdedLauncher/releases) <img src="https://f005.backblazeb2.com/file/Modlauncher/made-by-tritri-and-itsquadrus.svg"  height="28px" alt="by triti and itsquadrus"></p>
+<img src="https://f005.backblazeb2.com/file/Modlauncher/a-fork-from-helios-launcher-create-by-daniel-scalzi.svg"  height="28px" alt="fork of helios launcher create by scalzi"></p>
+
+
 
 <p align="center">Join modded servers without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
 
 ![Screenshot 1](https://i.imgur.com/6o7SmH6.png)
 ![Screenshot 2](https://i.imgur.com/x3B34n1.png)
+
 
 ## Features
 
@@ -187,25 +191,4 @@ For instructions on setting up Microsoft Authentication, see https://github.com/
 
 ## Resources
 
-* [Wiki][wiki]
-* [Nebula (Create Distribution.json)][nebula]
-* [v2 Rewrite Branch (Inactive)][v2branch]
-
-The best way to contact the developers is on Discord.
-
-[![discord](https://discordapp.com/api/guilds/211524927831015424/embed.png?style=banner3)][discord]
-
----
-
 ### See you ingame.
-
-
-[nodejs]: https://nodejs.org/en/ 'Node.js'
-[vscode]: https://code.visualstudio.com/ 'Visual Studio Code'
-[mainprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Main Process'
-[rendererprocess]: https://electronjs.org/docs/tutorial/application-architecture#main-and-renderer-processes 'Renderer Process'
-[chromedebugger]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome 'Debugger for Chrome'
-[discord]: https://discord.gg/zNWUXdt 'Discord'
-[wiki]: https://github.com/dscalzi/ModdedLauncher/wiki 'wiki'
-[nebula]: https://github.com/dscalzi/Nebula 'dscalzi/Nebula'
-[v2branch]: https://github.com/dscalzi/ModdedLauncher/tree/ts-refactor 'v2 branch'
