@@ -3,48 +3,44 @@ const { LoggerUtil } = require('helios-core')
 
 const logger = LoggerUtil.getLogger('DiscordWrapper')
 
-const { Client } = require('discord-rpc-patch')
+//print message in console when file readed
+logger.info('DiscordWrapper loaded')
 
-let client
-let activity
+//the discord-rpc module
+const rpc = require('discord-rpc');
 
-exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
-    client = new Client({ transport: 'ipc' })
+const config = {
+	appId: "1113882295728873524", //Id of your application
 
-    activity = {
-        details: initialDetails,
-        state: 'Server: ' + servSettings.shortId,
-        largeImageKey: servSettings.largeImageKey,
-        largeImageText: servSettings.largeImageText,
-        smallImageKey: genSettings.smallImageKey,
-        smallImageText: genSettings.smallImageText,
-        startTimestamp: new Date().getTime(),
-        instance: false
-    }
+	details: "Serveur : Modded", //Your descriptions
+	largeImageKeyName: "modded", // Key to the large image (https://discord.com/developers/applications -> Rich Presence -> Art Assets)
+	largeImageText: "Modded", //Text when you put your mouse on the large image
+	smallImageKeyName: "modded", // Key to the small image (https://discord.com/developers/applications -> Rich Presence -> Art Assets)
+	smallImageText: "Modded", //Text when you put your mouse on the small image
 
-    client.on('ready', () => {
-        logger.info('Discord RPC Connected')
-        client.setActivity(activity)
-    })
-    
-    client.login({clientId: genSettings.clientId}).catch(error => {
-        if(error.message.includes('ENOENT')) {
-            logger.info('Unable to initialize Discord Rich Presence, no client detected.')
-        } else {
-            logger.info('Unable to initialize Discord Rich Presence: ' + error.message, error)
-        }
-    })
-}
+	buttonOneName: "Bande annonce launcher", //Name of the button
+	buttonOneUrl: "https://youtu.be/xvFZjo5PgG0", //URL of the button
+};
 
-exports.updateDetails = function(details){
-    activity.details = details
-    client.setActivity(activity)
-}
+rpc.register(config.appId);
+const client = new rpc.Client({transport: 'ipc'});
 
-exports.shutdownRPC = function(){
-    if(!client) return
-    client.clearActivity()
-    client.destroy()
-    client = null
-    activity = null
-}
+client.on('ready', () => {
+	console.log('RPC Started');
+	client.setActivity({
+		details: config.details,
+		largeImageKey: config.largeImageKeyName,
+		largeImageText: config.largeImageText,
+		smallImageKey: config.smallImageKeyName,
+		smallImageText: config.smallImageText,
+		buttons: [
+			{
+				label: config.buttonOneName,
+				url: config.buttonOneUrl
+			},
+		]
+	});
+});
+
+const clientId = config.appId
+client.login({ clientId });
