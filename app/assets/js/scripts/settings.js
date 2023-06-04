@@ -1456,7 +1456,7 @@ function populateAboutVersionInformation(){
  */
 function populateReleaseNotes(){
     $.ajax({
-        url: 'https://github.com/Tritri1029/Moddedlauncher/releases.atom',
+        url: 'https://github.com/GabouleDev/Moddedlauncher/releases.atom',
         success: (data) => {
             const version = 'v' + remote.app.getVersion()
             const entries = $(data).find('entry')

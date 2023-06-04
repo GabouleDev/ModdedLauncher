@@ -5,9 +5,9 @@
   "description": "Modded Minecraft Launcher",
   "author": "Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/Tritri1029/Moddedlauncher",
+  "homepage": "https://github.com/GabouleDev/Moddedlauncher",
   "bugs": {
-    "url": "https://github.com/Tritri1029/Moddedlauncher/issues"
+    "url": "https://github.com/GabouleDev/Moddedlauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tritri1029/Moddedlauncher.git"
+    "url": "git+https://github.com/GabouleDev/Moddedlauncher.git"
   }
 }
