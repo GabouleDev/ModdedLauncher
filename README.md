@@ -4,7 +4,8 @@
 
 <em><h5 align="center">(formerly Electron Launcher)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/GabouleDev/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/GabouleDev/ModdedLauncher/releases) <img src="https://f005.backblazeb2.com/file/Modlauncher/made-by-tritri-and-itsquadrus.svg"  height="28px" alt="winter-is-coming"></p>
+[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/GabouleDev/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/GabouleDev/ModdedLauncher/releases) <img src="https://f005.backblazeb2.com/file/Modlauncher/made-by-tritri-and-itsquadrus.svg"  height="28px" alt="by triti and itsquadrus"></p>
+<img src="https://f005.backblazeb2.com/file/Modlauncher/a-fork-from-helios-launcher-create-by-daniel-scalzi.svg"  height="28px" alt="fork of helios launcher create by scalzi"></p>
 
 
 
