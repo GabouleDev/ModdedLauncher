@@ -1,6 +1,7 @@
+on:
+  release:
+    types: [created]
 name: Build
-
-on: push
 
 jobs:
   release:
@@ -36,3 +37,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
+        
+        
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+         name: dist
+         path: out/
