@@ -56,18 +56,24 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.get_version.outputs.version }}
-          release_name: Release v${{ steps.get_version.outputs.version }}
+          release_name: ${{ env.RELEASE_NAME }}
           body: |
-            This is the release of version ${{ steps.get_version.outputs.version }}
-          draft: true
-          prerelease: false
+            This is the auto-release of version ${{ steps.get_version.outputs.version }}
+          draft: false
+          prerelease: true
+
 
   get_version:
    runs-on: ubuntu-latest
    outputs:
     version: ${{ steps.set_version.outputs.version }}
+    release_name: ${{ steps.set_version.outputs.release_name }}
    steps:
     - name: Set Package Version
       id: set_version
-      run: echo "::set-output name=version::$(jq -r '.version' $GITHUB_WORKSPACE/package.json)"
+      run: |
+        version=$(jq -r '.version' $GITHUB_WORKSPACE/package.json)
+        release_name=$(jq -r '.productName' $GITHUB_WORKSPACE/package.json)
+        echo "VERSION=${version}" >> $GITHUB_ENV
+        echo "RELEASE_NAME=${release_name}" >> $GITHUB_ENV
 
