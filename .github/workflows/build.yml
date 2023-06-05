@@ -63,17 +63,17 @@ jobs:
           prerelease: true
 
 
-  get_version:
-   runs-on: ubuntu-latest
-   outputs:
+get_version:
+  runs-on: ubuntu-latest
+  outputs:
     version: ${{ steps.set_version.outputs.version }}
-    release_name: ${{ steps.set_version.outputs.release_name }}
-   steps:
+  steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+      
     - name: Set Package Version
       id: set_version
       run: |
-        version=$(jq -r '.version' $GITHUB_WORKSPACE/package.json)
-        release_name=$(jq -r '.productName' $GITHUB_WORKSPACE/package.json)
+        version=$(jq -r '.version' package.json)
         echo "VERSION=${version}" >> $GITHUB_ENV
         echo "RELEASE_NAME=${release_name}" >> $GITHUB_ENV
-
