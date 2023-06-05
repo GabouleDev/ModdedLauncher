@@ -63,10 +63,11 @@ jobs:
           prerelease: false
 
   get_version:
-    runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.set_version.outputs.version }}
-    steps:
-      - name: Set Package Version
-        id: set_version
-        run: echo "::set-output name=version::$(jq -r '.version' package.json)"
+   runs-on: ubuntu-latest
+   outputs:
+    version: ${{ steps.set_version.outputs.version }}
+   steps:
+    - name: Set Package Version
+      id: set_version
+      run: echo "::set-output name=version::$(jq -r '.version' $GITHUB_WORKSPACE/package.json)"
+
