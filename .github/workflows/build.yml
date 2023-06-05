@@ -1,6 +1,8 @@
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
+
 name: Build
 
 jobs:
