@@ -1,13 +1,13 @@
 {
-  "name": "Moddedlauncher",
-  "version": "2.0.7",
+  "name": "ModdedLauncher",
+  "version": "3.0.0",
   "productName": "Modded Launcher",
-  "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "description": "Electron-based launcher for Modded Revamped Private SMP",
+  "author": "GabouleDev",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/GabouleDev/Moddedlauncher",
+  "homepage": "https://github.com/GabouleDev/ModdedLauncher",
   "bugs": {
-    "url": "https://github.com/GabouleDev/Moddedlauncher/issues"
+    "url": "https://github.com/GabouleDev/ModdedLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -45,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabouleDev/Moddedlauncher.git"
+    "url": "git+https://github.com/GabouleDev/ModdedLauncher.git"
   }
 }

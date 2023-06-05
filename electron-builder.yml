@@ -1,4 +1,4 @@
-appId: 'Moddedlauncher'
+appId: 'ModdedLauncher'
 productName: 'Modded Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
