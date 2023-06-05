@@ -2,6 +2,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'package.json'
+
 
 name: Build
 
@@ -39,10 +42,31 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run dist
         shell: bash
-        
-        
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-         name: dist
-         path: out/
+          name: dist
+          path: out/
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.get_version.outputs.version }}
+          release_name: Release v${{ steps.get_version.outputs.version }}
+          body: |
+            This is the release of version ${{ steps.get_version.outputs.version }}
+          draft: true
+          prerelease: false
+
+  get_version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.set_version.outputs.version }}
+    steps:
+      - name: Set Package Version
+        id: set_version
+        run: echo "::set-output name=version::$(jq -r '.version' package.json)"
