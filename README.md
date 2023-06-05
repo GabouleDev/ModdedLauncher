@@ -11,8 +11,8 @@
 
 <p align="center">Join Modded Revamped without worrying about installing Java, Forge, or other mods. We'll handle that for you.</p>
 
-![Screenshot 1](https://i.imgur.com/6o7SmH6.png)
-![Screenshot 2](https://i.imgur.com/x3B34n1.png)
+![Screenshot 1](https://github.com/GabouleDev/ModdedLauncher/assets/89267584/fbea5448-a5a9-4e4f-bbf3-cb3ea5dbdca3)
+![Screenshot 2](https://github.com/GabouleDev/ModdedLauncher/assets/89267584/682d68ea-421d-4207-be5d-b66f4ecef54f)
 
 
 #### Latest Release
