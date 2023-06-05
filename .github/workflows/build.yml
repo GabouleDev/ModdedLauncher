@@ -1,6 +1,7 @@
+on:
+  release:
+    types: [created]
 name: Build
-
-on: push
 
 jobs:
   release:
