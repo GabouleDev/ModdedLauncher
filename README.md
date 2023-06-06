@@ -4,7 +4,7 @@
 
 <em><h5 align="center">Fork of [HeliosLauncher](https://github.com/dscalzi/HeliosLauncher)</h5></em>
 
-[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/dscalzi/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/GabouleDev/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/dscalzi/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/GabouleDev/ModdedLauncher/releases) <img src="https://f005.backblazeb2.com/file/Modlauncher/made-by-tritri-and-itsquadrus.svg"  height="28px" alt="by triti and itsquadrus"></p>
+[<p align="center"><img src="https://img.shields.io/github/actions/workflow/status/GabouleDev/ModdedLauncher/build.yml?branch=master&style=for-the-badge" alt="gh actions">](https://github.com/GabouleDev/ModdedLauncher/actions) [<img src="https://img.shields.io/github/downloads/GabouleDev/ModdedLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/GabouleDev/ModdedLauncher/releases) <img src="https://f005.backblazeb2.com/file/Modlauncher/made-by-tritri-and-itsquadrus.svg"  height="28px" alt="by triti and itsquadrus"></p>
 
 
 
@@ -17,7 +17,7 @@
 
 #### Latest Release
 
-[![](https://img.shields.io/github/release/dscalzi/ModdedLauncher.svg?style=flat-square)](https://github.com/GabouleDev/ModdedLauncher/releases/latest)
+[![](https://img.shields.io/github/release/GabouleDev/ModdedLauncher.svg?style=flat-square)](https://github.com/GabouleDev/ModdedLauncher/releases/latest)
 
 | Platform | File |
 | -------- | ---- |
