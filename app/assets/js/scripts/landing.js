@@ -318,7 +318,7 @@ async function asyncSystemScan(effectiveJavaOptions, launchAfter = true){
         // Show this information to the user.
         setOverlayContent(
             'No Compatible<br>Java Installation Found',
-            `In order to join WesterosCraft, you need a 64-bit installation of Java ${effectiveJavaOptions.suggestedMajor}. Would you like us to install a copy?`,
+            `In order to join Modded Revamped, you need a 64-bit installation of Java ${effectiveJavaOptions.suggestedMajor}. Would you like us to install a copy?`,
             'Install Java',
             'Install Manually'
         )
