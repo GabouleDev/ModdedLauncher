@@ -23,7 +23,7 @@
     "node": "18.x.x"
   },
   "dependencies": {
-    "@electron/remote": "^2.0.8",
+    "@electron/remote": "^2.0.10",
     "adm-zip": "^0.5.9",
     "discord-rpc": "^4.0.1",
     "ejs": "^3.1.9",
