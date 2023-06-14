@@ -1,6 +1,6 @@
 {
   "name": "ModdedLauncher",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "productName": "Modded Launcher",
   "description": "Electron-based launcher for Modded Revamped Private SMP",
   "author": "GabouleDev",
