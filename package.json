@@ -1,13 +1,13 @@
 {
-  "name": "ModdedLauncher",
-  "version": "3.0.7",
-  "productName": "Modded Launcher",
-  "description": "Electron-based launcher for Modded Revamped Private SMP",
-  "author": "GabouleDev",
-  "license": "MIT",
-  "homepage": "https://github.com/GabouleDev/ModdedLauncher",
+  "name": "helioslauncher",
+  "version": "2.0.4",
+  "productName": "Helios Launcher",
+  "description": "Modded Minecraft Launcher",
+  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/dscalzi/HeliosLauncher",
   "bugs": {
-    "url": "https://github.com/GabouleDev/ModdedLauncher/issues"
+    "url": "https://github.com/dscalzi/HeliosLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -23,9 +23,9 @@
     "node": "18.x.x"
   },
   "dependencies": {
-    "@electron/remote": "^2.0.10",
+    "@electron/remote": "^2.0.8",
     "adm-zip": "^0.5.9",
-    "discord-rpc": "^4.0.1",
+    "discord-rpc-patch": "^4.0.1",
     "ejs": "^3.1.9",
     "ejs-electron": "^2.1.1",
     "electron-updater": "^5.3.0",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabouleDev/ModdedLauncher.git"
+    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
   }
 }
