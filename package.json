@@ -34,7 +34,7 @@
     "got": "^13.0.0",
     "helios-core": "~2.0.4",
     "helios-distribution-types": "^1.2.0",
-    "jquery": "^3.6.4",
+    "jquery": "^3.7.1",
     "node-mcstatus": "^1.0.2",
     "semver": "^7.5.4"
   },
