@@ -39,7 +39,7 @@
     "semver": "^7.5.4"
   },
   "devDependencies": {
-    "electron": "^26.0.0",
+    "electron": "^26.2.0",
     "electron-builder": "^24.4.0",
     "eslint": "^8.47.0"
   },
