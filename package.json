@@ -41,7 +41,7 @@
   "devDependencies": {
     "electron": "^26.0.0",
     "electron-builder": "^24.4.0",
-    "eslint": "^8.47.0"
+    "eslint": "^8.50.0"
   },
   "repository": {
     "type": "git",
